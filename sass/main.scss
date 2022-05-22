@@ -1,0 +1,52 @@
+$font-size: 1.2rem;
+$btn-color-light: #f0f0f0;
+@mixin shorts($fsize) {
+  font-size: $fsize;
+}
+@media (@function divide($800, $16)) {
+  .exp-section .container {
+    grid-template-columns: 45% 55%;
+  }
+  .exp-section .box11 img {
+    width: 6rem;
+  }
+  .service-section .box1 p {
+    @include shorts($font-size);
+  }
+  .service-section .box1 h3 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 64em) {
+  .header-section button {
+    font-size: 1.2rem;
+  }
+
+  .header-section a {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+  .nav-section h1 {
+    font-size: 2.4rem;
+  }
+  .nav-section .box1 h1:nth-child(2) {
+    font-size: 3.6rem;
+  }
+  .nav-section .box1 {
+    margin-top: 4.8rem;
+  }
+  .exp-section .box1 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .exp-section .box2 img {
+    width: 9.6rem;
+  }
+  .exp-section .box2 h1 {
+    font-size: 6.2rem;
+  }
+  .exp-section .box2 h2 {
+    font-size: 1.8rem;
+  }
+  .exp-section h3 {
+  }
+}
